@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  margin: 0;
+
+  overflow: hidden;
+}
+
+.css-background {
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+
+  background: url('./media/home.jpg') no-repeat center center/cover;
+  
+  z-index: -1;
+  filter: blur(16px);
+}
+
+.css-btn {
+  transition: background-color .3s ease;
+}
+
+.css-btn:disabled {
+  background-color: rgba(0, 0, 0, .8);
+  cursor: not-allowed;
+}
